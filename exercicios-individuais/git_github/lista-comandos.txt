@@ -1,0 +1,21 @@
+
+git init
+git config --global user.name "Joao Garcia"
+git config --global user.email "joaovparisi18@gmail.com"
+
+git add .
+git commit -m "Inclusão dos arquivos da atividade 2"
+
+
+git branch -m master main
+git switch -c melhorias-estrutura  
+git commit -m "Update dos arquivos README.md e pesquisa.txt" 
+git switch main
+git merge melhorias-estrutura
+
+
+git remote add origin https://github.com/JoaoGLinux/curso-dev-js.git
+git clone https://github.com/JoaoGLinux/curso-dev-js.git
+git add .
+git commit -m "Atualização do GITHUB!"
+git push -u origin main
