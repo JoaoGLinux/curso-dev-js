@@ -88,3 +88,7 @@ O JavaScript, com bibliotecas como Phaser ou PixiJS, pode ser usado para criar j
 Internet das Coisas (IoT):
 O JavaScript pode ser usado para controlar dispositivos e sensores em sistemas IoT, como sistemas de automação residencial e dispositivos vestíveis. 
 Em resumo, o JavaScript é uma linguagem versátil e poderosa, com um amplo leque de aplicações, desde a criação de páginas web interativas até o desenvolvimento de aplicações complexas em diversos contextos. 
+
+######################################################################################################################
+
+JOÃO VITOR PARISI MARTINS GARCIA
