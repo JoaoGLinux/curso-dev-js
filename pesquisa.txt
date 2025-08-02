@@ -1,0 +1,71 @@
+PESQUISA SOBRE JAVASCRIPT
+JavaScript é uma linguagem de programação de alto nível, interpretada e multi-paradigma (suporta programação orientada a objetos, funcional e imperativa). Ela é uma das tecnologias principais da web, ao lado do HTML e do CSS.
+
+📚 Histórico
+Criada em 1995 por Brendan Eich, enquanto trabalhava na Netscape.
+
+Originalmente chamada de Mocha, depois LiveScript, e finalmente JavaScript — um nome escolhido por razões de marketing, embora não tenha relação direta com Java.
+
+🌐 Para que serve o JavaScript?
+JavaScript é usado principalmente para tornar páginas da web interativas e dinâmicas. Ele permite:
+
+Manipular o DOM (Document Object Model) — estrutura de uma página HTML.
+
+Criar animações, validações de formulários, menus dinâmicos, jogos, etc.
+
+Fazer requisições assíncronas (AJAX) e comunicação com servidores sem recarregar a página.
+
+Desenvolver aplicações web completas (ex: Gmail, Google Docs).
+
+⚙️ Principais características
+Interpretada: não precisa ser compilada.
+
+Event-driven: responde a eventos (como cliques, teclas pressionadas).
+
+Assíncrona e com suporte a promises e async/await.
+
+Roda diretamente no navegador (Chrome, Firefox, etc), mas também pode rodar no servidor com Node.js.
+
+🧰 Onde o JavaScript é usado?
+Front-end: com bibliotecas e frameworks como:
+
+React
+
+Vue.js
+
+Angular
+
+Back-end: com o ambiente de execução Node.js.
+
+Mobile: usando ferramentas como React Native ou Ionic.
+
+Desktop: com Electron.js (ex: Visual Studio Code foi feito com isso).
+
+Games: jogos 2D/3D simples para navegador (com HTML5 canvas ou bibliotecas como Phaser).
+
+🔐 JavaScript moderno (ES6+)
+Com o tempo, a linguagem evoluiu bastante. Desde o ECMAScript 2015 (ES6), foram adicionados vários recursos modernos:
+
+let e const (variáveis com escopo de bloco)
+
+Arrow functions (=>)
+
+Classes e herança (class, extends)
+
+Template strings (`Olá ${nome}`)
+
+Desestruturação (const { nome } = obj)
+
+Promises e async/await
+
+Módulos (import/export)
+
+⚠️ Curiosidades e cuidados
+Apesar do nome, JavaScript não é Java. São linguagens diferentes.
+
+Por ser uma linguagem muito flexível, pode gerar más práticas se usada sem cuidado.
+
+Tem tipagem dinâmica, o que pode causar bugs difíceis de encontrar.
+
+Ferramentas como TypeScript (um superset de JavaScript com tipagem estática) ajudam a evitar erros.
+
