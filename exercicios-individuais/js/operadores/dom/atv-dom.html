@@ -81,28 +81,35 @@
             const imc = (peso / altura ** 2).toFixed(2)
             //document.querySelector("#resultado_imc").textContent = imc;
         
-            let classificacao;
+            let classificacao, cor;
             if (imc < 18){
                 //console.log("Abaixo do peso normal!")
                 classificacao = "Abaixo do peso normal!";
+                cor = "yellow";
             } else if (imc >= 18 && imc < 25){
                 //console.log("Peso Normal!")
                 classificacao = "Peso Normal!";
+                cor = "green";
             } else if (imc >= 25 && imc < 30){
                 //console.log("Excesso de Peso!")
                 classificacao = "Excesso de Peso!";
+                cor = "orange";
             } else if (imc >= 30 && imc < 35){
                 //console.log("Obesidade Classe 1")
                 classificacao = "Obesidade Classe 1";
+                cor = "red";
             } else if (imc >= 35 && imc < 40){
                 //console.log("Obesidade Classe 2")
                 classificacao = "Obesidade Classe 2";
+                cor = "firebrick";
             } else if (imc >= 40){
                 //console.log("Obesidade Classe 3")
                 classificacao = "Obesidade Classe 3";
+                cor = "darkred";
             }
             
             document.querySelector("#resultado_imc").textContent = `imc = ${imc} - ${classificacao}`;
+            document.querySelector("#resultado_imc").style.color = cor;
         
         
         
