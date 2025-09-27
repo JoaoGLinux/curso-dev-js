@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Arrays e Objetos</title>
+</head>
+<body>
+    
+    <p>Aperte F12 para ver o conteúdo</p>
+
+    <script>
+        //ARRAY
+        const playlist = ["Pipa Voada", "Salmos150", "Enlouquecer"];
+        console.log(playlist);
+
+        //exibir a primeira musica
+        console.log(playlist[0])
+
+        //adicionar uma nova musica no final da playlist
+        playlist.push("Só tu és Santo")
+        console.log(playlist)
+
+        //remover a ultima musica que adicionou
+        playlist.pop()
+        console.log(playlist)
+
+        //exiba no console o tamanho da sua playlist final
+        console.log(playlist)
+        console.log(playlist.length)
+
+        
+        
+        
+        //OBJETO
+        const filme = {
+            titulo : "Gigantes de Aço",
+            ano : 2011,
+            diretor : "Shawn Levy"
+
+        }
+
+        //frase
+        console.log(`O filme ${filme.titulo}, dirigido por ${filme.diretor}, foi lançado em ${filme.ano}!`);
+
+        //criar nova propriedade
+        filme.personagens = ["João", "Luketa", "Peruche"]
+        console.log(filme)
+
+        //exibir o nome do primeiro personagem
+        console.log(filme.personagens[0])
+
+        //exiba o objeto do filme completo no console
+        console.log(filme)
+
+
+        
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Arrays e Objetos</title>
+</head>
+<body>
+
+    <p>F12 para exibir</p>
+
+    <script>
+        //ARRAYS [] E OBJETOS {}
+        // ARRAY => INDICE 1, 2, 3
+        // OBJETOS => {CHAVE : VALOR}
+
+        //ARRAY
+
+        const frutas = ["Maça", "Banana", "Laranja", "Uva", "Pera"];
+        console.log(frutas);
+
+        //verificar qtd de itens
+        console.log(frutas.length);
+
+        //exibir o 1 e o ultimo
+        console.log(frutas[0]);
+        console.log(frutas[4]);
+        console.log(frutas[frutas.length - 1]);
+
+        //inserir item
+        //insere na ultima posição
+        frutas.push("Jaca");
+        console.log(frutas);
+        //insere na primeira posição
+        frutas.unshift("Abacaxi");
+        console.log(frutas);
+
+        //alterar itens
+        frutas[0] = "Morango";
+        console.log(frutas);
+
+        //excluir itens
+        //exclui o ultimo item
+        frutas.pop();
+        console.log(frutas);
+
+        //exclui o primeiro item
+        frutas.shift();
+        console.log(frutas);
+
+        delete frutas[1];
+        console.log(frutas);
+
+        //inserir e excluir
+        frutas.splice(1,2,"Limão");
+        console.log(frutas);
+
+        frutas.splice(1,1);
+        console.log(frutas);
+
+        //OBJETOS
+        const pessoa = {
+            nome  : "João",
+            idade : 16,
+            altura : 1.81,
+            amigos : ["Luketa", "Peruche", "Bomfim"]
+        }
+
+        console.log(pessoa);
+        console.log(pessoa.nome);
+        console.log(pessoa['nome']);
+        console.log(pessoa.amigos[0])
+
+        //inserir valores
+        pessoa.cidade = "Presidente Prudente";
+        console.log(pessoa);
+
+        //alterar valores
+        pessoa.cidade = "Regente";
+        console.log(pessoa);
+
+        //excluir
+        delete pessoa.cidade;
+        console.log(pessoa)
+
+
+    </script>
+
+    
+</body>
+</html>
