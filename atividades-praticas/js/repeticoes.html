@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Repetições</title>
+</head>
+<body>
+
+    <p>Aperte F12 para visualizar!</p>
+
+    <script>
+        const nomes = ["João", "Luketa", "Bomfim", "Peruche", "Baiano", "Tomas"];
+        const numeros = [10,20,30,40,50];
+        const alunos = [
+            {nome: "João", nota: 9},
+            {nome: "Luketa", nota: 4},
+            {nome: "Bomfim", nota: 7}
+        ]
+
+        //for (variavel, condicao, incremento)
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        for (let i = 0; i < nomes.length; i++){
+            console.log(nomes[i]);
+        }
+
+        //while e do while
+        //while (condição verdadeira)
+
+        let x = 1;
+        while (x <= 10) {
+            console.log(x);
+            x++;
+            if (x === 4){
+                continue;
+            }
+            
+            if(x === 5){
+                break;
+            }
+        }
+
+        do{
+            console.log(x);
+            x++;
+        } while(x <= 10);   
+
+        //foreach
+
+        nomes.forEach(function(nome){
+            console.log(nome)
+        })
+
+        alunos.forEach(function(aluno){
+            console.log(aluno.nota)
+        })
+
+        //map
+        novoArray = [];
+        for (let i = 0; i< numeros.length; i++) {
+            novoArray.push(numeros[i] * 2)
+        }
+        console.log(novoArray);
+
+        const novoArray2 = numeros.map(function(numero){
+            return numero * 2
+        })
+        console.log(novoArray2);
+
+    </script>
+
+
+
+
+
+</body>
+</html>
