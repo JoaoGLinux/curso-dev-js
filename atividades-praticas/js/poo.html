@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO</title>
+</head>
+<body>
+    
+    <script>
+
+        const conta1 = {titular: "Lucas", saldo: 500, obs: "teste"};
+        const conta2 = {titular: "João", saldo: 5000};
+
+        const contas = [
+            {titular: "Lucas", saldo: 500},
+            {titular: "João", saldo: 5000}
+        ];
+
+        function extrato(conta){
+            console.log(`Titular da conta: ${conta.titular} e o saldo é ${conta.saldo}`)
+        }
+
+        extrato(conta1);
+        extrato(conta2);
+
+        contas.forEach(conta => extrato(conta));
+
+        //poo
+        console.log('-------------------------------');
+
+        class ContaBancaria {
+            constructor(nomeTitular, saldoConta){
+                this.nomeTitular = nomeTitular;
+                this.saldoConta = saldoConta;
+            }
+            
+            exibirExtrato(){
+                console.log(`Titular da conta: ${this.nomeTitular} e o saldo é ${this.saldoConta}`)
+            }
+        }
+
+        const contaLucas = new ContaBancaria("Lucas",500);
+        const contaMaria = new ContaBancaria("Maria",5000);
+
+        contaLucas.exibirExtrato();
+        contaMaria.exibirExtrato();
+
+    </script>
+</body>
+</html>
